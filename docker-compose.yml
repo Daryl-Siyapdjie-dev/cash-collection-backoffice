@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: cash-collection-backoffice
     ports:
-      - "8080:80"
+      - "8088:80"
     restart: unless-stopped
     environment:
       - NODE_ENV=production

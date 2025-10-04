@@ -10,7 +10,7 @@ curl -fsSL https://raw.githubusercontent.com/Daryl-Siyapdjie-dev/cash-collection
 ## Access Application
 
 ```
-http://194.163.132.186:8080
+http://194.163.132.186:8088
 ```
 
 ## Default Login
