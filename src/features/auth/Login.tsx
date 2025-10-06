@@ -9,7 +9,7 @@ import { Label } from '../../components/ui/Label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../components/ui/Card';
 import { authApi } from '../../services/api';
 import { useAuthStore } from '../../store/authStore';
-import logo from '../../assets/logo.png';
+// Logo import - using public asset
 
 const loginSchema = Yup.object().shape({
   username: Yup.string().required('Username is required'),
@@ -44,11 +44,11 @@ export function Login() {
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
           <div className="flex items-center justify-center mb-4">
-            <img src={logo} alt="Afriland First Bank" className="h-20 w-auto object-contain" />
+            <img src="/fave_icon_AFBSS.png" alt="Afriland First Bank" className="h-20 w-auto object-contain" />
           </div>
-          <CardTitle className="text-center text-2xl">Cash Collection</CardTitle>
+          <CardTitle className="text-center text-2xl">Afriland First Bank</CardTitle>
           <CardDescription className="text-center">
-            Back Office Portal
+            Cash Collection Back Office Portal
           </CardDescription>
         </CardHeader>
         <CardContent>
