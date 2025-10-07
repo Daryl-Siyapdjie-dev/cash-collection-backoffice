@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  cash-collection-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cash-collection-backoffice
+    ports:
+      - "8088:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - cash-collection-network
+
+networks:
+  cash-collection-network:
+    driver: bridge
